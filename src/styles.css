@@ -595,7 +595,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "—";
 }
 
 .img-fluid {
@@ -2481,7 +2481,7 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
-  height: calc(3.5rem + 2px);
+  height: calc(2.5rem + 2px);
   line-height: 1.25;
 }
 .form-floating > label {
@@ -7348,6 +7348,10 @@ footer {
   --bs-border-opacity: 1;
 }
 
+.w-5 {
+  width: 5% !important;
+  
+}
 .w-25 {
   width: 25% !important;
 }
@@ -10935,3 +10939,22 @@ footer {
   width: 4rem;
   font-size: 2rem;
 }
+
+/* tarjeta de contactos */
+
+.roboto-regular {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* <uniquifier>: Use a uniquifier for the class name
+ <weight>: Use a value from 100 to 900 */
+
+/* .overpass{
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
