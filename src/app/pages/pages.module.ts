@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 import { ContactosComponent } from './contactos/contactos.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
+import { DonacionesComponent } from './donaciones/donaciones.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { PagesComponent } from './pages.component';
     MisionComponent,
     VisionComponent,
     ContactosComponent,
-    PagesComponent
+    PagesComponent,
+    DonacionesComponent
     
   ],
   exports:[

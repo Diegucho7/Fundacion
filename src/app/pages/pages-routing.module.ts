@@ -6,6 +6,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { MisionComponent } from './mision/mision.component';
 import { VisionComponent } from './vision/vision.component';
+import { DonacionesComponent } from './donaciones/donaciones.component';
 
 const routes: Routes = [
   {path: 'fundacion',
@@ -16,7 +17,8 @@ const routes: Routes = [
    {path: 'nosotros', component: NosotrosComponent, data: {titulo: 'nosotros'}},
    {path: 'contactos', component: ContactosComponent, data: {titulo: 'contactos'}},
    {path: 'mision', component: MisionComponent, data: {titulo: 'mision'}},
-   {path: 'vision', component: VisionComponent, data: {titulo: 'vision'}}
+   {path: 'vision', component: VisionComponent, data: {titulo: 'vision'}},
+   {path: 'donaciones', component: DonacionesComponent, data: {titulo: 'donaciones'}}
   ]
   }
 ]
