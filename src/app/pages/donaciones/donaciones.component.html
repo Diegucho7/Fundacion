@@ -1,30 +1,44 @@
 
-<div class="container">
-    
-    <h1 class="text-center ">Pongamos de nuestro apoyo</h1>
-    
-    <img class="img" src="../../../assets/img/nino-vereda.jpg" alt="">
-    
-    <p>Mientras más nos juntemos en esta causa,
-        <br>
-        mayor será el impacto que podamos tener en la sociedad,
-        <br>
-        con tu donativo estarás ayudando a personas en <br>
-        situación socialmente muy vulnerables.
-    </p>
+<div class="container  pb-4 row">
+    <div class="col">
+      <h1 class="text-center ">Pongamos de nuestro apoyo</h1>
+      
+      <img class="img" src="../../../assets/img/nino-vereda.jpg" alt="">
+      
+      <p>Mientras más nos juntemos en esta causa,
+          <br>
+          mayor será el impacto que podamos tener en la sociedad,
+          <br>
+          con tu donativo estarás ayudando a personas en <br>
+          situación socialmente muy vulnerables.
+      </p>
 
-   
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="ZQPAMLDHBT3GS" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Donar ahora" />
+    </div>
+
+    <div class="pt-8 col" #paypal >
+      
+      <form 
+      [formGroup]="donanteForm"
+      >
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" formControlName="nombre" placeholder="Nombre y Apellido">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Valor</label>
+        <input type="number" class="form-control" id="formGroupExampleInput2" formControlName="valor" placeholder="Monto a Donar">
+      </div>
+
+
       </form>
-    <script src="https://www.paypal.com/sdk/js?client-id=BAArIsdh8_j_Ss11NVBIfAABfD7TsQU6vNkOK72ZJmtMsRykfAN23MrRYBO3HUEKhp33BY7XWY9K91pNR8&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-ZLH35L2NXL5US"></div>
+
+     
+    </div>
+
+    <!-- <div id="paypal-container-EAZ8VSR3FFFW8"></div>
 <script>
   paypal.HostedButtons({
-    hostedButtonId: "ZLH35L2NXL5US",
-  }).render("#paypal-container-ZLH35L2NXL5US")
-</script>
-</div>
+    hostedButtonId: "EAZ8VSR3FFFW8",
+  }).render("#paypal-container-EAZ8VSR3FFFW8")
+</script> -->
+  </div>
